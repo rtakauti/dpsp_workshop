@@ -1,4 +1,4 @@
-package br.com.summitbra.endpoint;
+package br.com.summitbra.controller;
 
 import br.com.summitbra.error.CustomErrorType;
 import br.com.summitbra.model.Student;
@@ -12,13 +12,13 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("students")
-public class StudentEndpoint {
+public class StudentController {
 
 
     private final StudentRepository studentDAO;
 
     @Autowired
-    public StudentEndpoint(StudentRepository studentDAO) {
+    public StudentController(StudentRepository studentDAO) {
         this.studentDAO = studentDAO;
     }
 
