@@ -1,2 +1,3 @@
 sudo service mysql start
-echo "create database school" | mysql -p
+echo "create database if not exists school" | mysql -p
+./mvnw spring-boot:run
